@@ -29,8 +29,8 @@ Compiled from [`archive/inventory/AVA_Document_Inventory.xlsx`](../archive/inven
 | 2026-07-20 | "Copilot Agent Development 101" enablement session |
 | 2026-08-06 | Last publish shown in Studio ("8/6/2026") |
 | 2026-08-16 | Detailed Design Document produced |
-| ≈2026-10-07 | SIMMY + D365 Simulations knowledge added (unpublished) |
-| 2026-10-16 | This repo becomes the central source of truth |
+| ≈2026-10-07 | SIMMY test child + D365 Simulations knowledge added (never published) |
+| 2026-10-16 | This repo becomes the central source of truth; SIMMY switched off |
 
 ## Pilot results (Feb–Apr 2026)
 

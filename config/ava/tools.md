@@ -1,15 +1,24 @@
-# AVA — Tools
+# AVA — Tools (live)
 
-Status: **partial**. The Overview tab shows the first three tools, then "See all". Paste the full Tools tab to finish this file.
+Captured 2026-10-16 from Copilot Studio › Tools ([screenshot](../../screenshots/2026-10-16/tools.png)), plus the Tools list on WIA's Details page.
 
-All tools are Azure DevOps connector actions used by WIA.
+All 5 tools are Azure DevOps connector actions with Trigger = By agent and Enabled = On, last modified by Daniel Moreira.
 
-| Tool | Type | Seen in | Fixed inputs | AI-filled inputs |
+| Tool | Available to | Last modified | Fixed inputs | AI-filled inputs |
 |---|---|---|---|---|
-| Get work item attachment | Connector | Overview 2026-10-16 | _to capture_ | _to capture_ |
-| Get work item comments | Connector | Overview 2026-10-16; design doc 2026-08 | Organization = `wtg-finance`; Project = `Atlas D365` | Work Item Id |
-| Get work item details | Connector | Overview 2026-10-16; design doc 2026-08 | Organization = `wtg-finance`; Project = `Atlas D365` | Work Item Type, Work Item Id |
-| List work item fields | Connector | Design doc 2026-08 (re-confirm) | Organization = `wtg-finance` | — |
-| Search for work items | Connector | Design doc 2026-08 (re-confirm) | Organization = `wtg-finance`; Project = `Atlas D365` | Search Text |
+| Get work item attachment | **AVA** | ~1 month ago | _to capture_ | _to capture_ |
+| Get work item comments | WIA | ~2 months ago | Organization = `wtg-finance`; Project = `Atlas D365` | Work Item Id |
+| Get work item details | WIA | ~2 months ago | Organization = `wtg-finance`; Project = `Atlas D365` | Work Item Type, Work Item Id |
+| List work item fields | WIA | ~2 months ago | Organization = `wtg-finance` | — |
+| Search for work items | WIA | ~2 months ago | Organization = `wtg-finance`; Project = `Atlas D365` | Search Text |
 
-WIA's instructions also name **Get query results**. The design document did not list it as enabled, so check whether it exists.
+Inputs come from the Aug 2026 design doc. Open each tool to confirm them and to fill in the attachment tool.
+
+## Gaps against WIA's instructions
+
+| WIA's instructions allow | Live state |
+|---|---|
+| Get work item attachment (CASE D attachment review) | Exists, but **scoped to AVA, not WIA** |
+| Get query results (CASE G reporting) | **Not configured** |
+
+See [`docs/open-items.md`](../../docs/open-items.md) item 3.

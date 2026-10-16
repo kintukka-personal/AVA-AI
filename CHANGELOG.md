@@ -2,6 +2,14 @@
 
 Changes to the live Copilot Studio agent, newest first. Format: date · agent · what changed · why · eval result.
 
+## 2026-10-16 · SIMMY switched off; live capture completed
+
+- **SIMMY:** Enabled → Off. It was a test, not part of AVA's design. Not yet published (the Draft also carries the licensing warning).
+- Captured live instructions for FIN, MAP, TAM, and WIA. They match the 2026-06-17 rewrite word for word, so nothing changed there.
+- Captured all 5 tools and the 3 agent-status warnings.
+- Open items re-triaged: 4 closed, new items for the licence-to-publish warning, WIA's missing attachment tool, and TAM's missing folder URL.
+- Eval: none run yet (open item 4).
+
 ## 2026-10-16 · Repo created
 
 - Captured live AVA config from Copilot Studio: overview, instructions (7,863 chars), knowledge (19 sources), child agents (5).

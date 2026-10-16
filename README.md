@@ -1,6 +1,6 @@
 # AVA — Atlas Virtual Assistant
 
-AVA is the central Finance AI entry point for D365 support at WiseTech Global. It is built in Microsoft Copilot Studio as a parent agent that answers from approved Procedure Guides (PGs) and QRCs and routes specialist questions to child agents (FIN, MAP, TAM, WIA, SIMMY).
+AVA is the central Finance AI entry point for D365 support at WiseTech Global. It is built in Microsoft Copilot Studio as a parent agent that answers from approved Procedure Guides (PGs) and QRCs and routes specialist questions to child agents (FIN, MAP, TAM, WIA).
 
 This repo is the **single source of truth** for AVA's configuration, decisions, and history. It replaces the copies scattered across SharePoint, OneDrive, and people's machines.
 
@@ -16,7 +16,7 @@ This repo is the **single source of truth** for AVA's configuration, decisions, 
 ```text
 config/
   ava/              overview, instructions, knowledge, tools, topics   ← live AVA config
-  child-agents/     fin, map, tam, wia, simmy + shared standards
+  child-agents/     fin, map, tam, wia (+ simmy, disabled) + shared standards
 evaluations/        Copilot Studio test sets (CSV import format)
 docs/
   architecture.md   parent–child model, routing logic, constraints
@@ -33,10 +33,10 @@ CHANGELOG.md        every change made in Studio, newest first
 |---|---|
 | Model | Claude Opus 4.6 |
 | Last published | 8/6/2026 |
-| Child agents | FIN, MAP, SIMMY, TAM, WIA (all enabled) |
+| Child agents | FIN, MAP, TAM, WIA (SIMMY: disabled test) |
 | Knowledge | 3 Microsoft websites + 16 SharePoint sources, each scoped to one agent |
 | Channels | Teams, Microsoft 365, SharePoint (org-wide) |
-| Status | 3 warnings · see [`docs/open-items.md`](docs/open-items.md) |
+| Status | 3 warnings: no eval run, premium licence needed to publish, shared org-wide · see [`docs/open-items.md`](docs/open-items.md) |
 
 ## Making a change
 

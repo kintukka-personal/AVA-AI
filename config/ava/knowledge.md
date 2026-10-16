@@ -9,7 +9,7 @@ All sources show **Status: Ready** and **Usage: General**, and Daniel Moreira la
 | 1 | https://support.microsoft.com/en-us | Public website | AVA | ~3 months ago |
 | 2 | https://learn.microsoft.com/en-us/dynamics365/ | Public website | AVA | ~5 months ago |
 | 3 | https://learn.microsoft.com/en-us/ | Public website | AVA | ~5 months ago |
-| 4 | D365 Simulations | SharePoint | SIMMY | **9 days ago** |
+| 4 | D365 Simulations | SharePoint | SIMMY (disabled test) | ~9 days ago |
 | 5 | D365 Templates | SharePoint | TAM | ~4 months ago |
 | 6 | 33-Procurement (Purchase Requisitions) PG.pdf | SharePoint | FIN | ~5 months ago |
 | 7 | 32-Vendor Payments PG.pdf | SharePoint | FIN | ~5 months ago |
@@ -33,10 +33,10 @@ All sources show **Status: Ready** and **Usage: General**, and Daniel Moreira la
 | FIN | PGs 30–34, AU Legal Entities, FinDims PR Coding Guide, What are FDs QRC, FD Codes, PAT, FD Decision Support Tool |
 | MAP | Procurement Subcategories – Main Account Mappings QRC |
 | TAM | D365 Templates library |
-| SIMMY | D365 Simulations library |
+| SIMMY (disabled) | D365 Simulations library (leftover from the test) |
 | WIA | None (uses ADO tools — see [`tools.md`](tools.md)) |
 
 ## Changes since the Aug 2026 design document
 
-- **Added:** `D365 Simulations` (SIMMY).
+- **Added:** `D365 Simulations` (for the SIMMY test; remove with SIMMY).
 - **Not in the live list:** `D365 Procedure Guides` and `D365 Quick Reference Cards`, which the design document listed as AVA's own SharePoint sources. AVA's instructions say approved PGs/QRCs come first, yet the only SharePoint source AVA has is the FD Decision Support Tool. See [`docs/open-items.md`](../../docs/open-items.md) item 2.

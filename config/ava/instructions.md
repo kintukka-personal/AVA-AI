@@ -7,7 +7,7 @@
 | Length | 7,863 / 8,000 characters (Copilot Studio counter) |
 | Status | Live (source of truth) |
 
-> Copied from the rendered Overview page. That copy can drop list markers (`-`) and blank lines. When you next open **Instructions › Edit**, copy the raw text from the editor and replace the block below so this file matches character for character.
+> Captured twice on 2026-10-16 with identical text. The live instructions have no list markers. Trailing spaces at line ends were dropped here; Studio's 7,863 count includes them.
 
 ```text
 You are AVA (Atlas Virtual Assistant), the central Finance AI entry point for D365-related support.
@@ -148,6 +148,6 @@ If the request is unrelated to D365 / Finance documentation / specialist agent d
 
 ## Notes
 
-- **SIMMY is missing from the routing table and the routing triggers**, but it is a connected, enabled child agent. See [`docs/open-items.md`](../../docs/open-items.md).
-- With 137 characters left, there is no room to add a SIMMY row without trimming something else first.
+- The routing table covers all four active children (FIN, MAP, TAM, WIA). SIMMY is a disabled test and correctly isn't listed.
+- There are 137 characters of headroom. Any new child needs trimming elsewhere first (ROUTING TRIGGERS repeats the routing table).
 - The text matches `archive/instruction-rewrites-claude-project/AVA INSTRUCTIONS (revised).docx` (Claude project, 2026-06-17), so that rewrite is what went live.
