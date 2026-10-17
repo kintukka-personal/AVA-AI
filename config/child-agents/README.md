@@ -1,14 +1,16 @@
 # Child agents
 
-Live list from Copilot Studio › Agents, 2026-10-16 ([screenshot](../../screenshots/2026-10-16/agents.png)). Every child has Relationship = Child, Trigger = By agent, Enabled = On.
+Live list from Copilot Studio › Agents, 2026-10-16 ([screenshot](../../screenshots/2026-10-16/agents-simmy-off.png)). Every child has Relationship = Child and Trigger = By agent.
 
-| Agent | Domain | Config file | Config status |
-|---|---|---|---|
-| FIN — Financial Dimensions Selector | Legal Entity, Business Unit, Cost Centre, Activity, PR coding | [`fin.md`](fin.md) | Baseline (Jun 2026 rewrite) |
-| MAP — Mapping Assistant | Procurement category/subcategory, main account/GL, Item VAT Group | [`map.md`](map.md) | Baseline (Jun 2026 rewrite) |
-| SIMMY — D365 Simulation provider | D365 simulations | [`simmy.md`](simmy.md) | **Not captured** |
-| TAM — Template Access Manager | Approved D365 templates | [`tam.md`](tam.md) | Baseline (Jun 2026 rewrite) |
-| WIA — Work Item Assistant (for ADO) | Existing Azure DevOps work items (read-only) | [`wia.md`](wia.md) | Baseline (Jun 2026 rewrite) |
+| Agent | Domain | Enabled | Config file | Config status |
+|---|---|---|---|---|
+| FIN — Financial Dimensions Selector | Legal Entity, Business Unit, Cost Centre, Activity, PR coding | On | [`fin.md`](fin.md) | Live capture 2026-10-16 |
+| MAP — Mapping Assistant | Procurement category/subcategory, main account/GL, Item VAT Group | On | [`map.md`](map.md) | Live capture 2026-10-16 |
+| TAM — Template Access Manager | Approved D365 templates | On | [`tam.md`](tam.md) | Live capture 2026-10-16 |
+| WIA — Work Item Assistant (for ADO) | Existing Azure DevOps work items (read-only) | On | [`wia.md`](wia.md) | Live capture 2026-10-16 |
+| SIMMY — D365 Simulation provider | Test only, not in use | **Off** | [`simmy.md`](simmy.md) | Disabled test |
+
+The live instructions for FIN, MAP, TAM, and WIA match the 2026-06-17 Claude-project rewrite word for word.
 
 ## Shared standards
 
@@ -17,13 +19,13 @@ FIN, MAP, TAM, and WIA all carry this same block. Change it in every child at on
 ```text
 SHARED STANDARDS
 These baseline rules apply to this agent and are identical across all AVA child agents:
-- Use formal business tone and American English.
-- Use only approved WiseTech Global source material; never invent codes, names, or steps.
-- Ask users to confirm by name or description — never "reply with a number only."
-- Do not display full tables or lists unless explicitly requested; narrow by keyword.
-- Never modify, submit, or approve anything in D365 or any system of record.
-- Distinguish confirmed values from values that still require confirmation.
-- For anything outside this agent's lane, hand control back to AVA (see Boundary).
+•      Use formal business tone and American English.
+•      Use only approved WiseTech Global source material; never invent codes, names, or steps.
+•      Ask users to confirm by name or description — never "reply with a number only."
+•      Do not display full tables or lists unless explicitly requested; narrow by keyword.
+•      Never modify, submit, or approve anything in D365 or any system of record.
+•      Distinguish confirmed values from values that still require confirmation.
+•      For anything outside this agent's lane, hand control back to AVA (see Boundary). 
 ```
 
 ## Not connected (historical / proposed)

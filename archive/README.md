@@ -12,7 +12,7 @@ These files were consolidated from SharePoint and OneDrive on 2026-10-16. Each W
 | `AVA_Detailed_Design_Document.docx` | 2026-08-16 | Most complete snapshot before this repo. Superseded by `config/` where they differ. 5 identical copies existed; one kept. |
 | **instruction-rewrites-claude-project/** | | |
 | `AVA INSTRUCTIONS (revised).docx` | 2026-06-17 | **Matches live AVA instructions** (2026-10-16). |
-| `FIN / MAP / TAM / WIA INSTRUCTIONS (revised).docx` | 2026-06-17 | Baseline for `config/child-agents/` (match the Aug design doc). Pending live check. |
+| `FIN / MAP / TAM / WIA INSTRUCTIONS (revised).docx` | 2026-06-17 | **Matches live child instructions** word for word (checked 2026-10-16). |
 | **child-agent-instructions/** | | |
 | `FIN / MAP / TAM / WIA … INSTRUCTIONS.001.docx` | 2026-06-17 | Outdated: earlier versions without the Shared Standards block. |
 | `TAM INSTRUCTIONS-001.docx` | 2026-06-04 | Outdated: first TAM draft. Has the direct D365 Templates folder link. |

@@ -11,13 +11,13 @@ AVA is a **parent orchestration agent** in Microsoft Copilot Studio. It is the s
                          │        AVA        │  Claude Opus 4.6
                          │  parent / router  │  Web Search: off
                          └─────────┬─────────┘
-     ┌─────────────┬───────────────┼───────────────┬──────────────┐
-     ▼             ▼               ▼               ▼              ▼
-   FIN           MAP             TAM             WIA           SIMMY
- Fin. Dims    Proc./GL/VAT    Templates     ADO work items   Simulations
- PGs 30–34,   Subcategory –   D365          ADO connector    D365
- FD codes,    Main Account    Templates     (read-only,      Simulations
- coding guide QRC             library       wtg-finance)     library
+     ┌─────────────┬───────────────┴───────────────┬─────────────┐
+     ▼             ▼                               ▼             ▼
+   FIN           MAP                             TAM           WIA
+ Fin. Dims    Proc./GL/VAT                    Templates   ADO work items
+ PGs 30–34,   Subcategory –                   D365        ADO connector
+ FD codes,    Main Account                    Templates   (read-only,
+ coding guide QRC                             library     wtg-finance)
 
   Not an agent: new issues → D365 Finance (Atlas) Issue Form · Atlas D365 User Support Hub
   Out of scope → People Leader
@@ -47,10 +47,11 @@ AVA classifies every query internally on two axes:
 
 ## Target state (V2 workshop, May 2026)
 
-AVA stays the front door, with one child agent per Finance stream: **O2C, P2P, R2R, TAX, P2A, REP**. The proposed onboarding path for a new child: the BPO or SME fills in a structured Microsoft Form (4 phases, 14 steps), which becomes an ADO ticket and gets a weekly review. Today's children are function-based (FIN, MAP, TAM, WIA, SIMMY), not stream-based.
+AVA stays the front door, with one child agent per Finance stream: **O2C, P2P, R2R, TAX, P2A, REP**. The proposed onboarding path for a new child: the BPO or SME fills in a structured Microsoft Form (4 phases, 14 steps), which becomes an ADO ticket and gets a weekly review. Today's children are function-based (FIN, MAP, TAM, WIA), not stream-based. SIMMY was a disabled test.
 
 ## Platform constraints
 
+- Publishing needs an upgraded licence because the agent uses premium features (Studio warning, 2026-10-16).
 - Microsoft authentication limits channels to Teams, M365, and SharePoint.
 - Usage limits caused an outage on 2026-06-05 (IT requests CS02363172 / CS02363197).
 - Licensing: 22 of 295 D365 users (7.5%) had M365 Copilot as of 2026-06-23. Copilot credit cost governance was reviewed with Trent Walsh on 2026-07-07.
