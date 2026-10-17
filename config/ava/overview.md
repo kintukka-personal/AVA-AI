@@ -53,7 +53,15 @@ Captured 2026-10-16 ([screenshot](../../screenshots/2026-10-16/agent-status.png)
 
 ## Channels
 
-Microsoft authentication limits channels to Teams, Microsoft 365, and SharePoint. AVA is published to all three for the whole organisation (per the Aug 2026 design document; re-confirm on the Channels tab).
+Confirmed by Daniel Moreira, 2026-10-17.
+
+| Channel | Status |
+|---|---|
+| Microsoft 365 | Live |
+| Microsoft Teams | Live |
+| SharePoint | Live |
+
+Microsoft authentication limits AVA to these three channels. AVA is shared with the whole organisation.
 
 ## Monitor snapshot (last 7 days)
 
