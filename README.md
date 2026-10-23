@@ -22,6 +22,7 @@ docs/
   architecture.md   parent–child model, routing logic, constraints
   history.md        timeline, pilot results, people
   open-items.md     known gaps between live config and intent   ← start here
+  analytics.md      dated usage, quality, and knowledge-use snapshots
 screenshots/        dated Copilot Studio captures
 archive/            original files + searchable text copies (_text/)
 CHANGELOG.md        every change made in Studio, newest first
