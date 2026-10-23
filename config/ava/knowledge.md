@@ -39,4 +39,4 @@ All sources show **Status: Ready** and **Usage: General**, and Daniel Moreira la
 ## Changes since the Aug 2026 design document
 
 - **Added:** `D365 Simulations` (for the SIMMY test; remove with SIMMY).
-- **Not in the live list:** `D365 Procedure Guides` and `D365 Quick Reference Cards`, which the design document listed as AVA's own SharePoint sources. AVA's instructions say approved PGs/QRCs come first, yet the only SharePoint source AVA has is the FD Decision Support Tool. See [`docs/open-items.md`](../../docs/open-items.md) item 2.
+- **Not in the Knowledge tab list:** `D365 Procedure Guides` and `D365 Quick Reference Cards`, which the design document listed as AVA's own SharePoint sources. Analytics for the last 180 days still show them as AVA's most-used sources (420 and 65 questions; [`docs/analytics.md`](../../docs/analytics.md)). Where they are configured is unconfirmed; see [`docs/open-items.md`](../../docs/open-items.md) item 2.

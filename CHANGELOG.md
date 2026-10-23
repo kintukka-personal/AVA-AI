@@ -2,6 +2,11 @@
 
 Changes to the live Copilot Studio agent, newest first. Format: date · agent · what changed · why · eval result.
 
+## 2026-10-23 · Analytics snapshot (no config change)
+
+- Recorded 180-day Activity analytics in `docs/analytics.md`: 3,113 sessions, 50,158 credits, 94.6% good answers.
+- Re-opened open item 2. Analytics show the PG and QRC libraries in heavy use, but they're missing from the Knowledge tab capture.
+
 ## 2026-10-16 · SIMMY switched off; live capture completed
 
 - **SIMMY:** Enabled → Off. It was a test, not part of AVA's design. Not yet published (the Draft also carries the licensing warning).

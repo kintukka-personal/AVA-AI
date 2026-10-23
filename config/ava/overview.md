@@ -65,6 +65,8 @@ Microsoft authentication limits AVA to these three channels. AVA is shared with 
 
 ## Monitor snapshot (last 7 days)
 
+For 180-day analytics, see [`docs/analytics.md`](../../docs/analytics.md).
+
 | Captured | Sessions | Reactions | Engagement |
 |---|---|---|---|
 | 2026-10-16 | 14 (↓33%) | 0 (—0%) | 29% (↑21%) |
