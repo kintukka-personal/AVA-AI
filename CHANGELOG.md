@@ -2,6 +2,12 @@
 
 Changes to the live Copilot Studio agent, newest first. Format: date · agent · what changed · why · eval result.
 
+## 2026-10-23 · 90-day analytics snapshot (no config change)
+
+- Added the 90-day window to `docs/analytics.md`: 353 sessions, 63% engagement, 45,087 credits (≈ 128 per session), WIA child success 36%.
+- The full knowledge-use list confirms the PG and QRC libraries are active sources outside the Knowledge tab (item 2).
+- New open item 15: credits per session rose about 70-fold between the two 90-day halves.
+
 ## 2026-10-23 · Analytics snapshot (no config change)
 
 - Recorded 180-day Activity analytics in `docs/analytics.md`: 3,113 sessions, 50,158 credits, 94.6% good answers.
