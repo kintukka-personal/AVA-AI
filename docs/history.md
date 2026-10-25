@@ -7,7 +7,7 @@ Compiled from [`archive/inventory/AVA_Document_Inventory.xlsx`](../archive/inven
 | Date | Milestone |
 |---|---|
 | 2026-01-22 | "Ask Ava" intro demo script drafted (Con Dolmas) |
-| 2026-01-27 | First agent instructions, V1.00 |
+| 2025-12-01 | First agent instructions, V1.00 (date per the character profile; the SharePoint file was last modified 2026-01-27) |
 | 2026-02-09 → 02-20 | Instruction iterations V1.1 → V1.5 |
 | 2026-02-13 | Financial Dimension Decision Tool + AVA session (Ghada Boulos) |
 | 2026-02-18 → 02-22 | Scenario tests 001–006 (FD code selection, vendor lookup, strict response template), all passed |
