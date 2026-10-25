@@ -2,6 +2,11 @@
 
 Changes to the live Copilot Studio agent, newest first. Format: date · agent · what changed · why · eval result.
 
+## 2026-10-25 · Character profile added (no config change)
+
+- Stored `docs/character-profile/`: the Oct 2026 AVA character profile (original .docx, searchable copy, avatar images).
+- `docs/history.md`: V1.00 instructions dated December 2025, per the profile.
+
 ## 2026-10-23 · 90-day analytics snapshot (no config change)
 
 - Added the 90-day window to `docs/analytics.md`: 353 sessions, 63% engagement, 45,087 credits (≈ 128 per session), WIA child success 36%.
