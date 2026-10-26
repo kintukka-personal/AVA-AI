@@ -24,6 +24,7 @@ docs/
   open-items.md     known gaps between live config and intent   ← start here
   analytics.md      dated usage, quality, and knowledge-use snapshots
   character-profile/  AVA persona, voice, branding (Oct 2026 profile + images)
+  leadership-video/   25-second summary video for leadership (Oct 2026) + source
 screenshots/        dated Copilot Studio captures
 archive/            original files + searchable text copies (_text/)
 CHANGELOG.md        every change made in Studio, newest first
