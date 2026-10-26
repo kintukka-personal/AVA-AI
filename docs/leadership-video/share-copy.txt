@@ -1,0 +1,1 @@
+AVA, our Atlas Virtual Assistant, is now the front door for D365 Finance support: ask her in Teams and get the exact steps from an approved Procedure Guide, cited every time. In the last 180 days she handled 3,113 conversations and saved an estimated 511 hours, and 100% of pilot users said they would keep using her.

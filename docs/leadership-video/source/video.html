@@ -1,0 +1,396 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>AVA leadership video</title>
+<style>
+:root{--teal:#2BB3A8;--teal2:#5FD6CB;--crimson:#E5484D;--rose:#FF7A86;--plum:#8E3C8F;--plum2:#CC85D6;--sky:#7FB2FF;--ink:#F4F6FB;--muted:#AEB8D0;--dim:#7C88A6;}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#0B1530}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;font-feature-settings:'cv11'}
+.disp{font-family:'Inter Display','Inter',sans-serif}
+.tnum{font-feature-settings:'tnum','cv11'}
+#stage{position:absolute;left:0;top:0;width:1920px;height:1080px;overflow:hidden;background:linear-gradient(155deg,#0F1C3D 0%,#0A1229 58%,#0C1634 100%)}
+.abs{position:absolute}
+.scene{position:absolute;left:0;top:0;width:1920px;height:1080px;opacity:0}
+.glow{position:absolute;border-radius:50%;pointer-events:none}
+.eyebrow{font-size:24px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--teal2)}
+.grad{background:linear-gradient(90deg,#FF5E6C 0%,#D45FA8 55%,#B36BD0 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.r{opacity:0}
+
+/* scene 1 */
+.file{position:absolute;display:flex;align-items:center;gap:16px;height:76px;padding:0 26px 0 16px;border-radius:16px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.12);white-space:nowrap;font-size:21px;font-weight:500;color:#DCE2F0}
+.badge{width:40px;height:48px;border-radius:7px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:7px;font-size:11px;font-weight:800;letter-spacing:.04em;color:#fff;flex:none}
+.pdf{background:#C4314B}.xls{background:#1F7A4A}
+
+/* scene 3: Teams */
+#win{position:absolute;left:100px;top:100px;width:1040px;height:880px;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 40px 120px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.08);color:#242424}
+.rail i{display:block;width:30px;height:30px;border-radius:8px;background:#D5D5DF;margin:22px auto 0}
+.bubble{position:absolute;border-radius:10px}
+.sk{display:inline-block;height:12px;border-radius:6px;background:#E3E3EC;vertical-align:middle}
+.row{display:grid;grid-template-columns:300px 1fr;border-top:1px solid #ECECF2}
+.row>div{padding:14px 18px;font-size:16px;color:#616161}
+.chip{display:inline-flex;align-items:center;gap:14px;padding:12px 24px 12px 14px;border-radius:40px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);font-size:27px;font-weight:600;white-space:nowrap}
+.tick{width:32px;height:32px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;flex:none}
+
+/* scene 4 */
+.node{position:absolute;width:430px;height:132px;border-radius:22px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.13);padding:22px 28px}
+.node b{display:block;font-family:'Inter Display','Inter',sans-serif;font-size:50px;font-weight:700;letter-spacing:.01em;line-height:1}
+.node span{display:block;font-size:27px;font-weight:500;color:#D7DDEC;margin-top:12px;white-space:nowrap}
+
+/* scene 5 */
+.tile{position:absolute;width:500px;height:250px;border-radius:24px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);padding:30px 34px;overflow:hidden}
+.tile .bar{position:absolute;left:0;top:0;right:0;height:5px}
+.tile .num{font-family:'Inter Display','Inter',sans-serif;font-size:108px;font-weight:700;letter-spacing:-0.035em;line-height:1;font-feature-settings:'tnum'}
+.tile .num small{font-size:52px;font-weight:600;letter-spacing:-0.01em;color:var(--muted);margin-left:4px}
+.tile .lab{font-size:27px;font-weight:500;color:#C9D1E4;margin-top:16px;line-height:1.3;text-wrap:balance}
+</style></head>
+<body>
+<div id="stage">
+  <div class="glow" id="g1" style="left:1080px;top:-420px;width:1300px;height:1300px;background:radial-gradient(circle,rgba(142,60,143,.30) 0%,rgba(142,60,143,.10) 38%,rgba(142,60,143,0) 68%)"></div>
+  <div class="glow" id="g2" style="left:-520px;top:420px;width:1300px;height:1300px;background:radial-gradient(circle,rgba(43,179,168,.20) 0%,rgba(43,179,168,.06) 40%,rgba(43,179,168,0) 68%)"></div>
+  <div class="glow" id="avaGlow" style="width:100px;height:100px;opacity:0;background:radial-gradient(circle,rgba(229,72,77,.42) 0%,rgba(190,70,140,.22) 34%,rgba(142,60,143,0) 68%)"></div>
+
+  <!-- 1 · problem -->
+  <div class="scene" id="s1">
+    <div id="pile" class="abs" style="left:0;top:0;width:1920px;height:1080px"></div>
+    <div class="abs eyebrow r" id="s1e" style="left:164px;top:232px">The problem</div>
+    <div class="abs disp r" id="s1n" style="left:146px;top:262px;font-size:300px;font-weight:700;letter-spacing:-0.045em;line-height:1">7–15</div>
+    <div class="abs r" id="s1l1" style="left:160px;top:596px;width:880px;font-size:56px;font-weight:600;line-height:1.16;letter-spacing:-0.012em;text-wrap:balance">minutes hunting for the next step in D365.</div>
+    <div class="abs r" id="s1l2" style="left:160px;top:764px;width:980px;font-size:52px;font-weight:600;line-height:1.16;letter-spacing:-0.012em;color:var(--rose);white-space:nowrap">…then a “How do I…” ticket anyway.</div>
+    <div class="abs r" id="s1f" style="left:162px;top:972px;font-size:20px;color:var(--dim)">Average for ERP users who hit an unexpected step · Gartner / IDC</div>
+  </div>
+
+  <!-- 2 · reveal -->
+  <div class="scene" id="s2">
+    <div class="abs" style="left:860px;top:318px;width:1000px">
+      <div class="disp r" id="s2h" style="font-size:150px;font-weight:700;letter-spacing:-0.035em;line-height:1">Meet <span class="grad">AVA</span></div>
+      <div class="r" id="s2s" style="font-size:46px;font-weight:500;color:var(--muted);margin-top:24px">Atlas Virtual Assistant</div>
+      <div class="r" id="s2l" style="font-size:46px;font-weight:600;margin-top:40px;line-height:1.2">The front door to D365 Finance support.</div>
+      <div class="r" id="s2c" style="margin-top:38px;display:flex;gap:14px;font-size:22px;font-weight:500;color:#CFD6E6">
+        <span style="padding:9px 18px;border-radius:30px;border:1px solid rgba(255,255,255,.18)">Microsoft Teams</span>
+        <span style="padding:9px 18px;border-radius:30px;border:1px solid rgba(255,255,255,.18)">Microsoft 365</span>
+        <span style="padding:9px 18px;border-radius:30px;border:1px solid rgba(255,255,255,.18)">SharePoint</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 · in use -->
+  <div class="scene" id="s3">
+    <div id="win">
+      <div class="abs" style="left:0;top:0;width:100%;height:40px;background:#EBEBF2;border-bottom:1px solid #E0E0E8">
+        <div class="abs" style="left:50%;top:7px;margin-left:-210px;width:420px;height:26px;border-radius:6px;background:#fff;border:1px solid #DCDCE6;font-size:14px;color:#8A8A99;line-height:24px;padding-left:34px">Search
+          <svg class="abs" style="left:11px;top:6px" width="13" height="13" viewBox="0 0 13 13"><circle cx="5.5" cy="5.5" r="4.3" fill="none" stroke="#8A8A99" stroke-width="1.6"/><path d="M8.7 8.7l3.2 3.2" stroke="#8A8A99" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+      <div class="abs rail" style="left:0;top:40px;width:68px;bottom:0;background:#EBEBF2;border-right:1px solid #E0E0E8">
+        <i></i><i style="background:#5B5FC7"></i><i></i><i></i><i></i>
+      </div>
+      <div class="abs" id="main" style="left:68px;top:40px;right:0;bottom:0;background:#F5F5F8">
+        <div class="abs" style="left:0;top:0;right:0;height:72px;background:#fff;border-bottom:1px solid #E6E6EE">
+          <div id="hdrAv" class="abs" style="left:24px;top:14px;width:44px;height:44px;border-radius:50%"></div>
+          <div class="abs" style="left:82px;top:12px;font-size:20px;font-weight:700">AVA</div>
+          <div class="abs" style="left:82px;top:40px;font-size:14px;color:#616161">Atlas Virtual Assistant</div>
+          <div class="abs" style="left:330px;top:0;height:72px;display:flex;gap:30px;align-items:center;font-size:16px;color:#5C5C66">
+            <span style="font-weight:600;color:#242424;position:relative">Chat<i style="position:absolute;left:-2px;right:-2px;top:47px;height:3px;background:#5B5FC7;border-radius:2px"></i></span><span>About</span>
+          </div>
+        </div>
+
+        <div class="bubble r" id="ub" style="right:32px;top:106px;background:#E8EBFA;padding:14px 20px;font-size:20px">How do I create a purchase agreement in D365?</div>
+
+        <div class="abs r" id="avaRow" style="left:24px;top:196px">
+          <div class="abs" style="left:0;top:0;width:36px;height:36px;border-radius:50%;overflow:hidden"><img src="portrait.png" style="width:130%;margin:-8% 0 0 -15%"></div>
+          <div class="abs" style="left:48px;top:2px;font-size:15px;white-space:nowrap"><b>AVA</b> <span style="color:#7A7A86;margin-left:6px">Atlas Virtual Assistant</span></div>
+        </div>
+        <div class="bubble r" id="dots" style="left:72px;top:224px;background:#fff;padding:18px 22px;box-shadow:0 1px 2px rgba(0,0,0,.08);display:flex;gap:8px">
+          <i class="dot" style="width:10px;height:10px;border-radius:50%;background:#8A8A99;display:block"></i>
+          <i class="dot" style="width:10px;height:10px;border-radius:50%;background:#8A8A99;display:block"></i>
+          <i class="dot" style="width:10px;height:10px;border-radius:50%;background:#8A8A99;display:block"></i>
+        </div>
+        <div class="bubble r" id="ans" style="left:72px;top:224px;width:850px;background:#fff;padding:24px 28px 26px;box-shadow:0 1px 3px rgba(0,0,0,.09)">
+          <div class="r" id="a1" style="font-size:20px;line-height:1.45"><span id="hl" style="padding:2px 4px;margin:-2px -4px;border-radius:4px;background:linear-gradient(rgba(43,179,168,.22),rgba(43,179,168,.22)) no-repeat;background-size:0% 100%">According to the <b>34-Procurement (Purchase Agreements) PG</b></span></div>
+          <div class="r" id="a2" style="font-size:20px;line-height:1.45;margin-top:4px">Topic: <b>Create Purchase Agreement</b></div>
+          <div class="r" id="a3" style="margin-top:18px;border:1px solid #E4E4EC;border-radius:8px;overflow:hidden">
+            <div class="row" style="border-top:0;background:#F3F3F8"><div style="font-weight:600;color:#3A3A44">Action</div><div style="font-weight:600;color:#3A3A44">Description</div></div>
+            <div class="row r" id="ar0"><div>1.&nbsp; <span class="sk" style="width:190px"></span></div><div><span class="sk" style="width:390px"></span></div></div>
+            <div class="row r" id="ar1"><div>2.&nbsp; <span class="sk" style="width:150px"></span></div><div><span class="sk" style="width:330px"></span></div></div>
+            <div class="row r" id="ar2"><div>3.&nbsp; <span class="sk" style="width:210px"></span></div><div><span class="sk" style="width:410px"></span></div></div>
+            <div class="row r" id="ar3"><div>4.&nbsp; <span class="sk" style="width:170px"></span></div><div><span class="sk" style="width:300px"></span></div></div>
+          </div>
+          <div class="r" id="a4" style="margin-top:18px;display:flex;align-items:center;gap:14px;border:1px solid #E4E4EC;border-radius:8px;padding:12px 16px;width:max-content">
+            <div class="badge pdf" style="width:32px;height:40px;font-size:10px;padding-bottom:5px">PDF</div>
+            <div><div style="font-size:17px;font-weight:600">34-Procurement (Purchase Agreements) PG.pdf</div><div style="font-size:14px;color:#6A6A76;margin-top:3px">Atlas Training Hub · SharePoint</div></div>
+          </div>
+        </div>
+
+        <div class="abs" style="left:24px;right:24px;bottom:22px;height:58px;background:#fff;border-radius:8px;border:1px solid #E0E0E8;border-bottom:2px solid #5B5FC7">
+          <div id="ph" class="abs" style="left:18px;top:16px;font-size:19px;color:#9A9AA6">Type a message</div>
+          <div id="typed" class="abs" style="left:18px;top:16px;font-size:19px;color:#242424;white-space:nowrap"></div>
+          <div id="caret" class="abs" style="top:15px;width:2px;height:26px;background:#242424"></div>
+          <svg id="send" class="abs" style="right:16px;top:15px" width="26" height="26" viewBox="0 0 24 24"><path d="M3 20.5l18-8.5L3 3.5l2.2 7.2L14 12l-8.8 1.3z" fill="#B0B0BC"/></svg>
+        </div>
+      </div>
+    </div>
+    <div class="abs" style="left:1222px;top:294px;width:640px">
+      <div class="eyebrow r" id="s3e">In Microsoft Teams</div>
+      <div class="disp r" id="s3h" style="margin-top:20px;font-size:66px;font-weight:700;line-height:1.08;letter-spacing:-0.025em">Exact steps from approved guides.</div>
+      <div style="margin-top:46px;display:flex;flex-direction:column;align-items:flex-start;gap:16px">
+        <div class="chip r" id="c0"><span class="tick"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3.2 8.4l3 3 6.6-6.8" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Cited every time</div>
+        <div class="chip r" id="c1"><span class="tick"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3.2 8.4l3 3 6.6-6.8" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Never guesses</div>
+        <div class="chip r" id="c2"><span class="tick"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3.2 8.4l3 3 6.6-6.8" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Read-only</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 · team -->
+  <div class="scene" id="s4">
+    <div class="abs disp r" id="s4h" style="left:0;top:118px;width:1920px;text-align:center;font-size:72px;font-weight:700;letter-spacing:-0.025em">Backed by four specialist agents</div>
+    <svg class="abs" id="lines" style="left:0;top:0" width="1920" height="1080"></svg>
+    <div class="node r" id="n0" style="left:250px;top:380px"><b style="color:var(--teal2)">FIN</b><span>Financial dimensions</span></div>
+    <div class="node r" id="n1" style="left:1240px;top:380px"><b style="color:var(--rose)">MAP</b><span>GL &amp; VAT account mapping</span></div>
+    <div class="node r" id="n2" style="left:250px;top:750px"><b style="color:var(--plum2)">TAM</b><span>Approved D365 templates</span></div>
+    <div class="node r" id="n3" style="left:1240px;top:750px"><b style="color:var(--sky)">WIA</b><span>Azure DevOps work items</span></div>
+  </div>
+
+  <!-- 5 · results -->
+  <div class="scene" id="s5">
+    <div class="abs disp r" id="s5h" style="left:268px;top:114px;font-size:64px;font-weight:700;letter-spacing:-0.025em;line-height:80px">What AVA has delivered</div>
+    <div class="abs eyebrow r" id="s5r1" style="left:162px;top:250px">In live use · last 180 days</div>
+    <div class="tile r" id="t0" style="left:160px;top:292px"><div class="bar" style="background:var(--crimson)"></div><div class="num" id="v0">0</div><div class="lab">conversations</div></div>
+    <div class="tile r" id="t1" style="left:710px;top:292px"><div class="bar" style="background:#B04FA8"></div><div class="num" id="v1">0</div><div class="lab">hours saved</div></div>
+    <div class="tile r" id="t2" style="left:1260px;top:292px"><div class="bar" style="background:var(--teal)"></div><div class="num" id="v2">0</div><div class="lab">of answers rated good</div></div>
+    <div class="abs eyebrow r" id="s5r2" style="left:162px;top:606px">Pilot users · Feb – Apr 2026</div>
+    <div class="tile r" id="t3" style="left:160px;top:648px"><div class="bar" style="background:var(--crimson)"></div><div class="num" id="v3">0</div><div class="lab">would keep using AVA</div></div>
+    <div class="tile r" id="t4" style="left:710px;top:648px"><div class="bar" style="background:#B04FA8"></div><div class="num" id="v4">0</div><div class="lab">usefulness rating</div></div>
+    <div class="tile r" id="t5" style="left:1260px;top:648px"><div class="bar" style="background:var(--teal)"></div><div class="num" id="v5">0</div><div class="lab">send support fewer “How&nbsp;do&nbsp;I…” questions</div></div>
+    <div class="abs r" id="s5f" style="left:162px;top:956px;width:1600px;font-size:19px;color:var(--dim);line-height:1.5">Live use: Copilot Studio analytics, 27 Apr – 23 Oct 2026 (hours saved is Studio’s estimate). Pilot: user feedback survey.</div>
+  </div>
+
+  <!-- 6 · outro -->
+  <div class="scene" id="s6">
+    <div class="abs disp r" id="s6h" style="left:0;top:632px;width:1920px;text-align:center;font-size:132px;font-weight:700;letter-spacing:-0.035em;line-height:1">Ask <span class="grad">AVA.</span></div>
+    <div class="abs r" id="s6l" style="left:0;top:800px;width:1920px;text-align:center;font-size:44px;font-weight:500;color:#DCE2F0">Governed D365 Finance support, live in Teams.</div>
+    <div class="abs r" id="s6f" style="left:0;top:902px;width:1920px;text-align:center;font-size:22px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)">Atlas Program · WiseTech Global</div>
+  </div>
+
+  <div id="ava" class="abs" style="left:0;top:0;width:100px;height:100px;border-radius:50%;opacity:0">
+    <div id="avaRing" class="abs" style="inset:0;border-radius:50%;background:linear-gradient(140deg,#FF5E6C,#B36BD0)"></div>
+    <div id="avaIn" class="abs" style="inset:0;border-radius:50%;overflow:hidden;background:#140B14"><img src="portrait.png" style="position:absolute;width:106%;height:106%;left:-3%;top:-1.5%"></div>
+  </div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const seg=(t,a,b)=>clamp((t-a)/(b-a));
+const lerp=(a,b,p)=>a+(b-a)*p;
+const eo=x=>1-Math.pow(1-x,3);
+const eq=x=>1-Math.pow(1-x,4);
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+
+// rise-in: opacity + translate + optional blur-free scale
+function rise(el,t,a,dur=.36,dy=26,sc=0){
+  const p=eq(seg(t,a,a+dur));
+  el.style.opacity=p;
+  el.style.transform=`translateY(${(1-p)*dy}px)`+(sc?` scale(${1-sc*(1-p)})`:'');
+}
+function scene(el,t,a,c,d,dy=-16){
+  const vis=t>=a&&t<d;
+  const o=vis?1-eio(seg(t,c,d)):0;
+  el.style.opacity=o;
+  el.style.visibility=o>0.001?'visible':'hidden';
+  el.style.transform=`translateY(${eio(seg(t,c,d))*dy}px)`;
+  return vis;
+}
+
+// scene 1 file pile
+const FILES=[
+ ['30-Vendor Onboarding and Maintenance PG.pdf','pdf',1150,70,-2.5,.9],
+ ['D365 QRC - What are Financial Dimensions.pdf','pdf',1260,166,2,.72],
+ ['31-Vendor Invoices PG.pdf','pdf',1110,262,-1.5,1],
+ ['Financial Dimensions Codes.xlsx','xls',1330,358,2.6,.78],
+ ['32-Vendor Payments PG.pdf','pdf',1150,454,-2.2,.95],
+ ['D365_FinDims_PR_CodingGuide.xlsx','xls',1290,550,1.6,.76],
+ ['33-Procurement (Purchase Requisitions) PG.pdf','pdf',1100,646,-1,1],
+ ['WTG - AU Legal Entities.xlsx','xls',1360,742,2.4,.8],
+ ['34-Procurement (Purchase Agreements) PG.pdf','pdf',1160,838,-1.8,.92],
+ ['D365 Financial Dimension Decision Support Tool.pdf','pdf',1230,934,1.2,.8],
+];
+const ORDER=[2,6,0,8,4,1,9,3,7,5,2,6];
+const pile=$('pile'); const fileEls=[];
+FILES.forEach(f=>{const d=document.createElement('div');d.className='file';
+  d.innerHTML=`<div class="badge ${f[1]}">${f[1]==='pdf'?'PDF':'XLSX'}</div><div>${f[0]}</div>`;
+  pile.appendChild(d); fileEls.push(d);});
+
+// scene 4 lines
+const NODES=[[250,380],[1240,380],[250,750],[1240,750]];
+const CX=960,CY=625;
+const svg=$('lines'); const lineEls=[],dotEls=[];
+NODES.forEach(([x,y],i)=>{
+  const nx=x+215, ny=y+66;            // node centre
+  const ex=i%2===0?x+430:x, ey=ny;    // inner edge
+  const p=document.createElementNS('http://www.w3.org/2000/svg','path');
+  const mx=(CX+ex)/2;
+  p.setAttribute('d',`M${CX} ${CY} C ${mx} ${CY}, ${mx} ${ey}, ${ex} ${ey}`);
+  p.setAttribute('fill','none');p.setAttribute('stroke','rgba(255,255,255,.28)');p.setAttribute('stroke-width','2.5');
+  svg.appendChild(p); lineEls.push(p);
+  const c=document.createElementNS('http://www.w3.org/2000/svg','circle');
+  c.setAttribute('r','7');c.setAttribute('fill',['#5FD6CB','#FF7A86','#CC85D6','#7FB2FF'][i]);c.style.opacity=0;
+  svg.appendChild(c); dotEls.push(c);
+});
+
+let HX=214,HY=176;
+window.setup=async()=>{
+  await document.fonts.ready;
+  await Promise.all([...document.images].map(i=>i.decode()));
+  // keep file cards on canvas
+  fileEls.forEach((d,i)=>{const f=FILES[i];d.style.left=f[2]+'px';d.style.top=f[3]+'px';
+    const w=d.offsetWidth; if(f[2]+w>1880) d.style.left=(1880-w)+'px';});
+  const r=$('hdrAv').getBoundingClientRect(); HX=r.left+r.width/2; HY=r.top+r.height/2;
+  lineEls.forEach(p=>{const L=p.getTotalLength();p.dataset.len=L;p.style.strokeDasharray=L;});
+  return true;
+};
+
+const Q='How do I create a purchase agreement in D365?';
+const fmt=(v,d=0)=>v.toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
+
+function avaState(t,K){
+  if(t<K[0][0]) return {...K[0]};
+  for(let i=0;i<K.length-1;i++){
+    const a=K[i],b=K[i+1];
+    if(t<=b.t){
+      const raw=seg(t,a.t,b.t), p=(i===0?eq:eio)(raw);
+      const pg=b.g<a.g?eq(clamp(raw*2.2)):eio(raw);   // glow clears early when shrinking
+      return {x:lerp(a.x,b.x,p),y:lerp(a.y,b.y,p),s:Math.exp(lerp(Math.log(a.s),Math.log(b.s),p)),g:lerp(a.g,b.g,pg),o:lerp(a.o,b.o,p)};
+    }
+  }
+  return {...K[K.length-1]};
+}
+
+window.render=(t)=>{
+  // ambient glows
+  $('g1').style.transform=`translate(${Math.sin(t*.23)*70}px,${Math.cos(t*.19)*50}px)`;
+  $('g2').style.transform=`translate(${Math.cos(t*.21)*60}px,${Math.sin(t*.17)*45}px)`;
+
+  // 1 · problem 0–3.6
+  if(scene($('s1'),t,0,3.36,3.6)){
+    rise($('s1e'),t,.05,.35,16);
+    rise($('s1n'),t,.1,.45,40);
+    rise($('s1l1'),t,.55,.36,22);
+    rise($('s1l2'),t,1.45,.36,22);
+    rise($('s1f'),t,.9,.4,10);
+    const hi=ORDER[Math.floor(t/.3)%ORDER.length];
+    fileEls.forEach((d,i)=>{const f=FILES[i];
+      const a=eq(seg(t,.04*i,.04*i+.5));
+      const on=i===hi&&t>.35;
+      const base=.34+.36*f[5];
+      d.style.opacity=a*(on?1:base);
+      d.style.transform=`translate(${(1-a)*60+Math.sin(t*.8+i)*6}px,${-t*16*f[5]}px) rotate(${f[4]}deg) scale(${(on?1.035:1)*(.92+.08*f[5])})`;
+      d.style.borderColor=on?'rgba(95,214,203,.9)':'rgba(255,255,255,.12)';
+      d.style.background=on?'rgba(43,179,168,.16)':'rgba(255,255,255,.055)';
+    });
+  }
+
+  // 2 · reveal 3.6–6.6
+  if(scene($('s2'),t,3.6,6.3,6.55,-12)){
+    rise($('s2h'),t,3.8,.4,30);
+    rise($('s2s'),t,3.95,.38,22);
+    rise($('s2l'),t,4.08,.38,22);
+    rise($('s2c'),t,4.4,.38,16);
+  }
+
+  // 3 · in use 6.5–12.0
+  if(scene($('s3'),t,6.45,11.75,12.0,-12)){
+    const w=eq(seg(t,6.5,6.88));
+    $('win').style.opacity=clamp(w*3); $('win').style.transform=`translateY(${(1-w)*160}px)`;
+    const n=t<8.4?Math.floor(seg(t,7.1,8.2)*Q.length):0;
+    $('typed').textContent=Q.slice(0,n);
+    $('ph').style.opacity=n>0||(t>=8.4)?0:1;
+    if(t>=8.4) $('ph').style.opacity=1;
+    const typing=t>=7.0&&t<8.4;
+    $('caret').style.left=(18+$('typed').offsetWidth+2)+'px';
+    $('caret').style.opacity=typing&&(t<8.2||Math.floor(t*3)%2===0)?1:0;
+    $('send').querySelector('path').setAttribute('fill',n>0?'#5B5FC7':'#B0B0BC');
+    rise($('ub'),t,8.4,.3,18);
+    rise($('avaRow'),t,8.6,.25,10);
+    const dIn=eq(seg(t,8.6,8.8)),dOut=seg(t,9.0,9.1);
+    $('dots').style.opacity=dIn*(1-dOut);
+    $('dots').querySelectorAll('.dot').forEach((d,i)=>{d.style.transform=`translateY(${Math.min(0,Math.sin(t*2*Math.PI*1.8-i*.9))*7}px)`;});
+    rise($('ans'),t,9.0,.32,16);
+    rise($('a1'),t,9.04,.3,8); rise($('a2'),t,9.12,.3,8); rise($('a3'),t,9.2,.3,8);
+    for(let i=0;i<4;i++) rise($('ar'+i),t,9.27+i*.08,.26,6);
+    rise($('a4'),t,9.62,.3,8);
+    $('hl').style.backgroundSize=`${eio(seg(t,9.9,10.35))*100}% 100%`;
+    rise($('s3e'),t,9.25,.35,14);
+    rise($('s3h'),t,9.32,.4,24);
+    rise($('c0'),t,9.9,.32,16); rise($('c1'),t,10.05,.32,16); rise($('c2'),t,10.2,.32,16);
+  }
+
+  // 4 · team 12.0–15.0
+  if(scene($('s4'),t,11.95,14.55,14.8,-12)){
+    rise($('s4h'),t,12.05,.38,22);
+    for(let i=0;i<4;i++){
+      const L=+lineEls[i].dataset.len;
+      const p=eio(seg(t,12.2+i*.15,12.55+i*.15));
+      lineEls[i].style.strokeDashoffset=L*(1-p);
+      rise($('n'+i),t,12.3+i*.15,.34,18,.04);
+      const q=seg(t,13.1+i*.15,13.55+i*.15);
+      const pt=lineEls[i].getPointAtLength(L*eio(q));
+      dotEls[i].setAttribute('cx',pt.x);dotEls[i].setAttribute('cy',pt.y);
+      dotEls[i].style.opacity=q>0&&q<1?Math.sin(q*Math.PI):0;
+    }
+  }
+
+  // 5 · results 15.0–22.2
+  if(scene($('s5'),t,14.95,21.9,22.15,-14)){
+    rise($('s5h'),t,15.05,.38,18);
+    rise($('s5r1'),t,15.2,.35,12);
+    rise($('t0'),t,15.3,.4,30); rise($('t1'),t,15.45,.4,30); rise($('t2'),t,15.6,.4,30);
+    const c1=eq(seg(t,15.4,16.2));
+    $('v0').textContent=fmt(Math.round(3113*c1));
+    $('v1').innerHTML=fmt(Math.round(511*c1))+'<small>hrs</small>';
+    $('v2').innerHTML=fmt(94.6*c1,1)+'<small>%</small>';
+    rise($('s5r2'),t,17.6,.35,12);
+    rise($('t3'),t,17.7,.4,30); rise($('t4'),t,17.85,.4,30); rise($('t5'),t,18.0,.4,30);
+    const c2=eq(seg(t,17.8,18.6));
+    $('v3').innerHTML=fmt(Math.round(100*c2))+'<small>%</small>';
+    $('v4').innerHTML=fmt(4.6*c2,1)+'<small>/ 5</small>';
+    $('v5').innerHTML=fmt(Math.round(60*c2))+'<small>%</small>';
+    rise($('s5f'),t,18.3,.4,8);
+  }
+
+  // 6 · outro 22.15–25
+  if(scene($('s6'),t,22.15,99,100)){
+    rise($('s6h'),t,22.5,.4,28);
+    rise($('s6l'),t,22.65,.38,18);
+    rise($('s6f'),t,22.9,.38,10);
+  }
+
+  // AVA portrait, shared across scenes
+  const K=[
+    {t:3.6,  x:520,y:540,s:400,g:0,o:0},
+    {t:4.25, x:520,y:540,s:460,g:1,o:1},
+    {t:6.35, x:520,y:540,s:460,g:1,o:1},
+    {t:6.9,  x:HX,y:HY,s:44,g:0,o:1},
+    {t:11.8, x:HX,y:HY,s:44,g:0,o:1},
+    {t:12.35,x:CX,y:CY,s:200,g:.6,o:1},
+    {t:14.7, x:CX,y:CY,s:200,g:.6,o:1},
+    {t:15.15,x:206,y:154,s:84,g:0,o:1},
+    {t:21.95,x:206,y:154,s:84,g:0,o:1},
+    {t:22.6, x:960,y:388,s:390,g:1,o:1},
+  ];
+  const a=avaState(t,K);
+  const breathe=1+Math.sin(t*1.6)*.006*a.g;
+  const s=a.s*breathe;
+  const ava=$('ava');
+  ava.style.opacity=t<3.6?0:a.o;
+  ava.style.width=ava.style.height=s+'px';
+  ava.style.left=(a.x-s/2)+'px'; ava.style.top=(a.y-s/2)+'px';
+  const ring=clamp((a.s-60)/80);
+  const rw=Math.max(0,a.s*.012)*ring;
+  $('avaIn').style.inset=rw+'px';
+  $('avaRing').style.opacity=ring;
+  const gl=$('avaGlow'), gs=s*2.3;
+  gl.style.width=gl.style.height=gs+'px';
+  gl.style.left=(a.x-gs/2)+'px'; gl.style.top=(a.y-gs/2)+'px';
+  gl.style.opacity=(t<3.6?0:a.g*a.o)*(0.9+Math.sin(t*1.3)*.1);
+};
+</script>
+</body></html>

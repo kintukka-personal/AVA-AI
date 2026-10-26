@@ -2,6 +2,10 @@
 
 Changes to the live Copilot Studio agent, newest first. Format: date · agent · what changed · why · eval result.
 
+## 2026-10-26 · Leadership summary video added (no config change)
+
+- Added `docs/leadership-video/`: a 25-second video of AVA's problem, benefits and results for leadership, plus its poster, share copy, plan and source. Every on-screen figure comes from `docs/analytics.md` (180 days to 2026-10-23) or the pilot results in `docs/history.md`.
+
 ## 2026-10-26 · Character profile updated (no config change)
 
 - Replaced `docs/character-profile/AVA_Character_Profile.docx` with the new version. The text is unchanged; the header image is now AVA's portrait (`portrait.png`, same as `archive/images-branding/Designer (6).png`) instead of the Ask Ava tile.
