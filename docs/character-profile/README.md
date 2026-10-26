@@ -4,18 +4,17 @@
 |---|---|
 | Original | [`AVA_Character_Profile.docx`](AVA_Character_Profile.docx) (reference copy) |
 | Compiled | October 2026, from AVA's instructions, the design document, launch comms, demo scripts and Teams/email history |
-| Added to repo | 2026-10-25 |
+| Added to repo | 2026-10-25 (updated 2026-10-26: portrait replaces the Ask Ava tile) |
 | Status | Current reference for AVA's persona, voice and branding. Where it states configuration facts, `config/` wins. |
 
 The text below is converted from the Word file, so the repo can be searched and diffed.
 
 ---
-
 **Character profile · personality sheet**
 
 *Profile compiled October 2026 from AVA's instructions, design document, launch comms, demo scripts and Teams/email history.*
 
-<img src="ask-ava-tile.png" style="width:3.4in;height:1.75658in" alt="The Ask Ava tile: AVA&#39;s illustrated avatar with crimson and plum hair inside a chat bubble with a typing indicator, on dark navy, captioned Atlas Virtual Assistant" />
+<img src="portrait.png" style="width:2.64583in;height:2.64583in" alt="AVA portrait: illustrated woman with crimson and plum hair in a navy WiseTech Global polo, on a dark background" />
 
 | Identity card      | AVA at a glance                                                                                                                                                                        |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -2,6 +2,10 @@
 
 Changes to the live Copilot Studio agent, newest first. Format: date · agent · what changed · why · eval result.
 
+## 2026-10-26 · Character profile updated (no config change)
+
+- Replaced `docs/character-profile/AVA_Character_Profile.docx` with the new version. The text is unchanged; the header image is now AVA's portrait (`portrait.png`, same as `archive/images-branding/Designer (6).png`) instead of the Ask Ava tile.
+
 ## 2026-10-25 · Character profile added (no config change)
 
 - Stored `docs/character-profile/`: the Oct 2026 AVA character profile (original .docx, searchable copy, avatar images).
